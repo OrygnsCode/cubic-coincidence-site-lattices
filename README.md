@@ -49,7 +49,7 @@ Both Python programs use the standard library only.
 ## References
 
 - H. Grimmer, The generating function for coincidence site lattices in the cubic system,
-  Acta Cryst. A40 (1984), 108-112.
+  Acta Cryst. A40 (1984), 108-112. [doi:10.1107/S0108767384000246](https://doi.org/10.1107/S0108767384000246)
 - P. Zeiner, Symmetries of coincidence site lattices of cubic lattices, Z. Kristallogr. 220
   (2005), 915-925. [arXiv:math/0605525](https://arxiv.org/abs/math/0605525)
 - M. Baake, Solution of the coincidence problem in dimensions d <= 4, in R. V. Moody (ed.),
