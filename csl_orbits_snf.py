@@ -211,6 +211,8 @@ def run(sigma_max):
                 seen.add(hnf_columns(apply_mat(P, cols)))
         orbit_counts.append(orbits)
         print("%5d  %4d  %3d  %6d" % (s, len(lats), psi(s), orbits))
+        if len(lats) != psi(s):
+            raise SystemExit("index %d: found %d lattices, expected psi = %d" % (s, len(lats), psi(s)))
     print()
     print("a(n) for n = 1..%d:" % len(orbit_counts))
     print(", ".join(map(str, orbit_counts)))

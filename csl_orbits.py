@@ -126,8 +126,9 @@ def main():
         for L in lattices:
             orbits.setdefault(min(transform(g, L) for g in G), []).append(L)
         sizes = sorted(len(v) for v in orbits.values())
-        ok = "" if len(lattices) == psi(s) else "  (total differs from psi!)"
-        print(f"{s:5}  {len(lattices):4}  {psi(s):3}  {len(orbits):6}  {sizes}{ok}")
+        print(f"{s:5}  {len(lattices):4}  {psi(s):3}  {len(orbits):6}  {sizes}")
+        if len(lattices) != psi(s):
+            sys.exit(f"index {s}: found {len(lattices)} lattices, expected psi = {psi(s)}")
         counts.append(len(orbits))
     print()
     print("a(n) for n = 1..%d:" % len(counts))
