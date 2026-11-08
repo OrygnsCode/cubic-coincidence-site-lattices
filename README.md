@@ -9,7 +9,8 @@ standard way of describing grain boundaries in cubic crystals, which is where th
 Σ7, ... boundaries come from.
 
 The total number of CSLs of index 2n-1 is OEIS [A031359](https://oeis.org/A031359). Many of those
-lattices are just rotated copies of each other. This repository counts the genuinely different ones.
+lattices are just rotated copies of each other. This repository counts the genuinely different ones,
+which is OEIS [A401864](https://oeis.org/A401864).
 
 ## The sequence
 
