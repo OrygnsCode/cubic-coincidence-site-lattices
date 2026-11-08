@@ -30,9 +30,9 @@ since every lattice is mapped to itself by x -> -x.
 
 - `csl_orbits.py` builds every coincidence rotation from a primitive integer quaternion, computes
   each CSL exactly as the dual of Z^3 + RZ^3, and groups the lattices into orbits under the
-  symmetries of the cube. `python csl_orbits.py 99` covers every odd index up to 99.
+  symmetries of the cube. `python csl_orbits.py 199` covers every odd index up to 199.
 - `csl_orbits_snf.py` is a second program written separately. It uses the same rotations but gets
-  each CSL from the Smith normal form of the rotation matrix. `python csl_orbits_snf.py 41`.
+  each CSL from the Smith normal form of the rotation matrix. `python csl_orbits_snf.py 199`.
 - `csl.gp` is a PARI/GP program for the closed formula (Zeiner 2005, Theorem 2.2), plus a
   function that writes `terms.txt`.
 - `terms.txt` lists n and a(n) for n = 1 to 10000, from `csl.gp`.
@@ -43,8 +43,8 @@ Both Python programs use the standard library only.
 
 - Both programs find exactly A031359(n) lattices of each index, so no lattice is missed or
   counted twice.
-- The class counts from `csl_orbits.py` agree with the formula for every odd index up to 99
-  (n = 1 to 50), and `csl_orbits_snf.py` agrees for every odd index up to 41 (n = 1 to 21).
+- The class counts from both programs agree with the formula for every odd index up to 199
+  (n = 1 to 100).
 
 ## References
 
